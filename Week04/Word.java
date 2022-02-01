@@ -1,0 +1,28 @@
+import java.util.Scanner;
+
+public class Word
+{
+    /* Author: Thomas Hazekamp
+    * Date : 01/02/22
+    * Description: A description is above each method
+    */
+
+    // This method when called will return a boolean if a letter is the same as the first letter in the word
+    public static boolean isFirstLetter(String word, char c)
+    {
+        return word.charAt(0) == c;
+    }
+
+    // This method when called will return a boolean if a letter is in the given word
+    public static boolean containsLetter(String word, char c)
+    {
+        for(int i = 0; i < word.length(); i++)
+        {
+            if(word.charAt(i) == c)
+            {
+                return true;
+            }
+        }
+        return false;
+    }
+}

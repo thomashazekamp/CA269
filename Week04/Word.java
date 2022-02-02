@@ -48,4 +48,49 @@ public class Word
         }
         return false;
     }
+
+    // This method operates like the hangman game, if the guessed letter is in the word then it will show the position of the letter followed by underscores
+    public static String showLetter(String word, char guessedLetter)
+    {
+        String result = "";
+        for(int i = 0; i < word.length(); i++)
+        {
+            if(word.charAt(i) == guessedLetter)
+            {
+                result += guessedLetter;
+            }
+            else
+            {
+                result += "_";
+            }
+        }
+        return result;
+    }
+
+    // This method will also work like the hangman game but the word and a string of guessed letter will be given, similar output as showLetter method above but will show all correct guesses in the guess word (string)
+    public static String showLetters(String word, String guessString)
+    {
+        String result = "";
+        int status;
+
+        for(int i = 0; i < word.length(); i++)
+        {
+            status = 0;
+
+            for(int j = 0; j < guessString.length(); j++)
+            {
+                if(word.charAt(i) == guessString.charAt(j))
+                {
+                    result += guessString.charAt(j);
+                    status = 1; // The letter has been found so we exit the j for loop, and move onto the next letter in the hangman word 
+                    break;
+                }
+            }
+            if(status == 0)
+            {
+                result += "_"
+            }
+        }
+        return result;
+    }
 }

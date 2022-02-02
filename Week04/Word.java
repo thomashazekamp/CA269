@@ -25,4 +25,27 @@ public class Word
         }
         return false;
     }
+
+    // This method will check if all the letters in the guessed word are a part of original word
+    public static boolean allDone(String word, String guessWord)
+    {
+        int count = 0;
+
+        // Looping for each letter in the word
+        for(int i = 0; i < word.length(); i++)
+        {
+            // If the current letter from the word is in the guessed word then count goes increments
+            if(containsLetter(guessWord, word.charAt(i)))
+            {
+                count++;
+            }
+        }
+
+        // The count should be equal to the original words length
+        if(count == word.length())
+        {
+            return true;
+        }
+        return false;
+    }
 }

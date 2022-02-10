@@ -7,32 +7,32 @@ public class Test
     * Description: These are methods, a description is above each method
     */
 
-    // // This method will return each student's name in a given array
-    // public static void printName(Student [] student)
-    // {
-    //     for(int i = 0; i < student.length; i++)
-    //     {
-    //         System.out.println(student[i].name);
-    //     }
-    // }
+    // This method will return each student's name in a given array
+    public static void printName(Student [] student)
+    {
+        for(int i = 0; i < student.length; i++)
+        {
+            System.out.println(student[i].name);
+        }
+    }
 
-    // // This method will return each student's mark in a given array
-    // public static void printMark(Student [] student)
-    // {
-    //     for(int i = 0; i < student.length; i++)
-    //     {
-    //         System.out.println(student[i].mark);
-    //     }
-    // }
+    // This method will return each student's mark in a given array
+    public static void printMark(Student [] student)
+    {
+        for(int i = 0; i < student.length; i++)
+        {
+            System.out.println(student[i].mark);
+        }
+    }
 
-    // // This method will return each student's name & mark in a given array
-    // public static void printMarkName(Student [] student)
-    // {
-    //     for(int i = 0; i < student.length; i++)
-    //     {
-    //         System.out.println(student[i].mark + " (" + student[i].name + ")");
-    //     }
-    // }
+    // This method will return each student's name & mark in a given array
+    public static void printMarkName(Student [] student)
+    {
+        for(int i = 0; i < student.length; i++)
+        {
+            System.out.println(student[i].mark + " (" + student[i].name + ")");
+        }
+    }
 
     // This method will return each student's mark & name using getters in a given array
     // Note for this method to work you must comment out all the above methods

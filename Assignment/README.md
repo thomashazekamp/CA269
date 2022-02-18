@@ -1,6 +1,6 @@
 Group Members: 
 Thomas Hazekamp (Student ID: 20423602), 
-Aaron Crawford(Student ID: 20336753), 
+Aaron Crawford (Student ID: 20336753), 
 Eoin Daly (Student ID: 20424366),
 
 Work:
